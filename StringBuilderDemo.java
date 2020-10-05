@@ -1,7 +1,16 @@
 public class StringBuilderDemo {
 	public static void main(String[] args)
 	{
-		StringBuilder s = new StringBuilder("Vinay");
-		System.out.println(s.subSequence(1, 4));
+		String s = "Vinay";
+		StringBuilder sb = new StringBuilder(s);
+		System.out.println(sb);
+		System.out.println(sb.reverse());
+		sb.setCharAt(0, 'm');
+		System.out.println(sb);
+		System.out.println(s.replace('a', 'd'));
+		System.out.println(s);
+		String a = new String("vinay");
+		String b = "vinay";
+		System.out.println(a==b);
 	}
 }
